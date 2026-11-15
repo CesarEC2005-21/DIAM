@@ -18,7 +18,7 @@ export default function WelcomeScreen({ onUnlock }: WelcomeScreenProps) {
       animate={{ opacity: 1 }}
       exit={{ opacity: 0, scale: 0.96 }}
       transition={{ duration: 0.7, ease: 'easeInOut' }}
-      className="relative min-h-screen w-full flex flex-col items-center justify-center px-4 py-12 z-20 overflow-hidden"
+      className="relative min-h-screen w-full flex flex-col items-center justify-center px-4 pt-12 pb-28 sm:pb-12 z-20 overflow-hidden"
     >
       {/* Background soft ambient watercolor halos for calm romantic atmosphere */}
       <div className="absolute top-1/4 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[550px] h-[550px] bg-rose-100/60 rounded-full blur-[120px] pointer-events-none" />

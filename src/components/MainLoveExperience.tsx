@@ -25,7 +25,7 @@ export default function MainLoveExperience({ onRestart }: MainLoveExperienceProp
       initial={{ opacity: 0, y: 40 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.9, ease: 'easeOut' }}
-      className="relative w-full min-h-screen z-20 flex flex-col items-center"
+      className="relative w-full min-h-screen z-20 flex flex-col items-center pb-24 sm:pb-0"
     >
       {/* Hero Welcome for Page 2 */}
       <section className="relative min-h-[85vh] w-full flex flex-col items-center justify-center text-center px-4 py-16 overflow-hidden">
