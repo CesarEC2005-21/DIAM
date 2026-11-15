@@ -28,8 +28,8 @@ export default function Home() {
       {/* Ambient floating hearts and golden party sparkles */}
       <FloatingParticles />
 
-      {/* Background audio player (visible floating widget with controls) */}
-      <AudioPlayer src={loveData.musicUrl} autoPlay={startMusic} />
+      {/* Background audio player (selector de canciones + controles) */}
+      <AudioPlayer songs={loveData.songs} autoPlay={startMusic} />
 
       {/* Screen transitions */}
       <AnimatePresence mode="wait">

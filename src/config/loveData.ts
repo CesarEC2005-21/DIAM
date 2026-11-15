@@ -2,7 +2,12 @@ export interface LoveData {
   recipientName: string;
   subheading: string;
   coverImage: string;
-  musicUrl: string;
+  songs: {
+    id: number;
+    title: string;
+    artist: string;
+    url: string;
+  }[];
   albumPhotos: {
     id: number;
     url: string;
@@ -29,8 +34,21 @@ export const loveData: LoveData = {
   subheading: "Hoy celebramos la magia de tenerte",
   // Foto inicial con el nombre
   coverImage: "/foto-1.jpeg",
-  // Canción de fondo: La Misma Gente - Tú y Yo
-  musicUrl: "/musica.mp3",
+  // Canciones para escoger al entrar
+  songs: [
+    {
+      id: 1,
+      title: "Tú y Yo",
+      artist: "La Misma Gente",
+      url: "/musica.mp3",
+    },
+    {
+      id: 2,
+      title: "Amor",
+      artist: "Emmanuel Cortes",
+      url: "/cancion-2.mp3",
+    },
+  ],
   
   // Álbum de fotos carrusel
   albumPhotos: [
